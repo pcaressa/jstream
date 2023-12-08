@@ -1,0 +1,13 @@
+\doxysubsection*{(c) 2023 by Paolo Caressa $<$github.\+com/pcaressa/jstream$>$}
+
+\doxysection*{What?}
+
+jstream is yet another Json parser. Actually, the Json parsed by jstream is not standard, since there\textquotesingle{}s no Unicode support, just ASCII\+: it was enough for the application I needed, to port it to support Unicode would essentially mean to use {\ttfamily wchar} instead of {\ttfamily char}.
+
+\doxysection*{Why?}
+
+I wrote it in need of a parsed that consume characters from a stream (a text file, a http channel etc.).
+
+\doxysection*{How?}
+
+To use it in your code just include the {\ttfamily \mbox{\hyperlink{jstream_8h}{jstream.\+h}}} file, that exports two data types and two functions. 

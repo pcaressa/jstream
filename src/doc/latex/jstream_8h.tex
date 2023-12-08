@@ -1,0 +1,156 @@
+\hypertarget{jstream_8h}{}\doxysection{jstream.\+h File Reference}
+\label{jstream_8h}\index{jstream.h@{jstream.h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{jstream_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structjstream__param__s}{jstream\+\_\+param\+\_\+s}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned $\ast$ \mbox{\hyperlink{jstream_8h_a519b778285205c898b57839ab698552c}{jstream\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structjstream__param__s}{jstream\+\_\+param\+\_\+s}} $\ast$ \mbox{\hyperlink{jstream_8h_a77f67557fbd0ded3d1348ccda5fe907d}{jstream\+\_\+param\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55ba5203071ca85e00df6bf2526855b6df0d}{ERR\+\_\+\+NONE}}
+, \mbox{\hyperlink{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55bafb88c5fa6e7d51074ec36bd4578e03a0}{ERR\+\_\+\+MEMORY}}
+, \mbox{\hyperlink{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55ba95c25d2aff88c290efaea23fe09bd320}{ERR\+\_\+\+VALUE}}
+, \mbox{\hyperlink{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55baa5adfa848230154f452ac275e369df0a}{ERR\+\_\+\+NULL}}
+, \newline
+\mbox{\hyperlink{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55baa71eb1c034bbaed6d4180b7cf98374b9}{ERR\+\_\+\+FALSE}}
+, \mbox{\hyperlink{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55ba62b407a8fd2fa2efc761b9690eb9aa2c}{ERR\+\_\+\+TRUE}}
+, \mbox{\hyperlink{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55ba6c092b85a9ee9f0d7cdf3640bfb70980}{ERR\+\_\+\+NUMBER}}
+, \mbox{\hyperlink{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55ba374f19af6433f0d35370aa005836f10b}{ERR\+\_\+\+NUMBER\+\_\+\+TOO\+\_\+\+LONG}}
+, \newline
+\mbox{\hyperlink{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55ba86a8851bfba1b1a32a860f361b4fe3cb}{ERR\+\_\+\+EOS\+\_\+\+INSIDE\+\_\+\+STRING}}
+, \mbox{\hyperlink{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55bae629688854614b1d9b5913c1e6ba8f22}{ERR\+\_\+\+COMMA}}
+, \mbox{\hyperlink{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55babe0ef53d5181d92cb2ff7d2669336a35}{ERR\+\_\+\+COLON}}
+, \mbox{\hyperlink{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55ba15e6731c09ab438ab1defa78c018d4f4}{ERR\+\_\+\+CLOSED\+\_\+\+BRACKET}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{jstream_8h_a519b778285205c898b57839ab698552c}{jstream\+\_\+t}} \mbox{\hyperlink{jstream_8h_a2a41d11de1a5772bf8d9f67cb37f84ec}{jstream}} (\mbox{\hyperlink{jstream_8h_a77f67557fbd0ded3d1348ccda5fe907d}{jstream\+\_\+param\+\_\+t}} p)
+\item 
+\mbox{\hyperlink{jstream_8h_a519b778285205c898b57839ab698552c}{jstream\+\_\+t}} \mbox{\hyperlink{jstream_8h_a789cb9083c811ec662a4f62a44abaae8}{jstream\+\_\+dump}} (FILE $\ast$f, \mbox{\hyperlink{jstream_8h_a519b778285205c898b57839ab698552c}{jstream\+\_\+t}} obj)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{jstream_8h_a77f67557fbd0ded3d1348ccda5fe907d}\label{jstream_8h_a77f67557fbd0ded3d1348ccda5fe907d}} 
+\index{jstream.h@{jstream.h}!jstream\_param\_t@{jstream\_param\_t}}
+\index{jstream\_param\_t@{jstream\_param\_t}!jstream.h@{jstream.h}}
+\doxysubsubsection{\texorpdfstring{jstream\_param\_t}{jstream\_param\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structjstream__param__s}{jstream\+\_\+param\+\_\+s}} $\ast$ \mbox{\hyperlink{jstream_8h_a77f67557fbd0ded3d1348ccda5fe907d}{jstream\+\_\+param\+\_\+t}}}
+
+Structure used to represent in bytes parsed values from a stream. \mbox{\Hypertarget{jstream_8h_a519b778285205c898b57839ab698552c}\label{jstream_8h_a519b778285205c898b57839ab698552c}} 
+\index{jstream.h@{jstream.h}!jstream\_t@{jstream\_t}}
+\index{jstream\_t@{jstream\_t}!jstream.h@{jstream.h}}
+\doxysubsubsection{\texorpdfstring{jstream\_t}{jstream\_t}}
+{\footnotesize\ttfamily typedef unsigned$\ast$ \mbox{\hyperlink{jstream_8h_a519b778285205c898b57839ab698552c}{jstream\+\_\+t}}}
+
+A jstream is an array of unsigned numbers\+: strings and doubles are casted (eg if sizeof(unsigned) == 4 then a string of n characters takes (n+1) / 4 items (+1 because of the ending \textquotesingle{}\textbackslash{}0\textquotesingle{}), while a double takes 2 items, etc). 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55b}\label{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55b}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+Error codes\+: they are returned in the referenced parameter err by the jstream function. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_NONE@{ERR\_NONE}!jstream.h@{jstream.h}}\index{jstream.h@{jstream.h}!ERR\_NONE@{ERR\_NONE}}}\mbox{\Hypertarget{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55ba5203071ca85e00df6bf2526855b6df0d}\label{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55ba5203071ca85e00df6bf2526855b6df0d}} 
+ERR\+\_\+\+NONE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_MEMORY@{ERR\_MEMORY}!jstream.h@{jstream.h}}\index{jstream.h@{jstream.h}!ERR\_MEMORY@{ERR\_MEMORY}}}\mbox{\Hypertarget{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55bafb88c5fa6e7d51074ec36bd4578e03a0}\label{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55bafb88c5fa6e7d51074ec36bd4578e03a0}} 
+ERR\+\_\+\+MEMORY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_VALUE@{ERR\_VALUE}!jstream.h@{jstream.h}}\index{jstream.h@{jstream.h}!ERR\_VALUE@{ERR\_VALUE}}}\mbox{\Hypertarget{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55ba95c25d2aff88c290efaea23fe09bd320}\label{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55ba95c25d2aff88c290efaea23fe09bd320}} 
+ERR\+\_\+\+VALUE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_NULL@{ERR\_NULL}!jstream.h@{jstream.h}}\index{jstream.h@{jstream.h}!ERR\_NULL@{ERR\_NULL}}}\mbox{\Hypertarget{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55baa5adfa848230154f452ac275e369df0a}\label{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55baa5adfa848230154f452ac275e369df0a}} 
+ERR\+\_\+\+NULL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_FALSE@{ERR\_FALSE}!jstream.h@{jstream.h}}\index{jstream.h@{jstream.h}!ERR\_FALSE@{ERR\_FALSE}}}\mbox{\Hypertarget{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55baa71eb1c034bbaed6d4180b7cf98374b9}\label{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55baa71eb1c034bbaed6d4180b7cf98374b9}} 
+ERR\+\_\+\+FALSE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_TRUE@{ERR\_TRUE}!jstream.h@{jstream.h}}\index{jstream.h@{jstream.h}!ERR\_TRUE@{ERR\_TRUE}}}\mbox{\Hypertarget{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55ba62b407a8fd2fa2efc761b9690eb9aa2c}\label{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55ba62b407a8fd2fa2efc761b9690eb9aa2c}} 
+ERR\+\_\+\+TRUE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_NUMBER@{ERR\_NUMBER}!jstream.h@{jstream.h}}\index{jstream.h@{jstream.h}!ERR\_NUMBER@{ERR\_NUMBER}}}\mbox{\Hypertarget{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55ba6c092b85a9ee9f0d7cdf3640bfb70980}\label{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55ba6c092b85a9ee9f0d7cdf3640bfb70980}} 
+ERR\+\_\+\+NUMBER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_NUMBER\_TOO\_LONG@{ERR\_NUMBER\_TOO\_LONG}!jstream.h@{jstream.h}}\index{jstream.h@{jstream.h}!ERR\_NUMBER\_TOO\_LONG@{ERR\_NUMBER\_TOO\_LONG}}}\mbox{\Hypertarget{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55ba374f19af6433f0d35370aa005836f10b}\label{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55ba374f19af6433f0d35370aa005836f10b}} 
+ERR\+\_\+\+NUMBER\+\_\+\+TOO\+\_\+\+LONG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_EOS\_INSIDE\_STRING@{ERR\_EOS\_INSIDE\_STRING}!jstream.h@{jstream.h}}\index{jstream.h@{jstream.h}!ERR\_EOS\_INSIDE\_STRING@{ERR\_EOS\_INSIDE\_STRING}}}\mbox{\Hypertarget{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55ba86a8851bfba1b1a32a860f361b4fe3cb}\label{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55ba86a8851bfba1b1a32a860f361b4fe3cb}} 
+ERR\+\_\+\+EOS\+\_\+\+INSIDE\+\_\+\+STRING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_COMMA@{ERR\_COMMA}!jstream.h@{jstream.h}}\index{jstream.h@{jstream.h}!ERR\_COMMA@{ERR\_COMMA}}}\mbox{\Hypertarget{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55bae629688854614b1d9b5913c1e6ba8f22}\label{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55bae629688854614b1d9b5913c1e6ba8f22}} 
+ERR\+\_\+\+COMMA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_COLON@{ERR\_COLON}!jstream.h@{jstream.h}}\index{jstream.h@{jstream.h}!ERR\_COLON@{ERR\_COLON}}}\mbox{\Hypertarget{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55babe0ef53d5181d92cb2ff7d2669336a35}\label{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55babe0ef53d5181d92cb2ff7d2669336a35}} 
+ERR\+\_\+\+COLON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_CLOSED\_BRACKET@{ERR\_CLOSED\_BRACKET}!jstream.h@{jstream.h}}\index{jstream.h@{jstream.h}!ERR\_CLOSED\_BRACKET@{ERR\_CLOSED\_BRACKET}}}\mbox{\Hypertarget{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55ba15e6731c09ab438ab1defa78c018d4f4}\label{jstream_8h_a06fc87d81c62e9abb8790b6e5713c55ba15e6731c09ab438ab1defa78c018d4f4}} 
+ERR\+\_\+\+CLOSED\+\_\+\+BRACKET&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{jstream_8h_a2a41d11de1a5772bf8d9f67cb37f84ec}\label{jstream_8h_a2a41d11de1a5772bf8d9f67cb37f84ec}} 
+\index{jstream.h@{jstream.h}!jstream@{jstream}}
+\index{jstream@{jstream}!jstream.h@{jstream.h}}
+\doxysubsubsection{\texorpdfstring{jstream()}{jstream()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{jstream_8h_a519b778285205c898b57839ab698552c}{jstream\+\_\+t}} jstream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jstream_8h_a77f67557fbd0ded3d1348ccda5fe907d}{jstream\+\_\+param\+\_\+t}}}]{p }\end{DoxyParamCaption})}
+
+Parse a json stream\+: it the get field of the structure $\ast$p to be assigne to a function (pointer) returning the next character read from the stream, or a negative value in case of end or error. Return the following values inside the structure $\ast$p\+: obj = pointer to the memory area containing data size = length of such area in bytes error = error code (0 meaning \char`\"{}no error\char`\"{}) clast = last item got from the stream and that follows the parsed json value. The address obj is also returned as value from the function (in case of error it is NULL). Warning\+: it is the caller responsibility to deallocate p-\/$>$obj once it is no longer needed, via free(p-\/$>$obj). Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jstream_8h_a2a41d11de1a5772bf8d9f67cb37f84ec_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{jstream_8h_a2a41d11de1a5772bf8d9f67cb37f84ec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{jstream_8h_a789cb9083c811ec662a4f62a44abaae8}\label{jstream_8h_a789cb9083c811ec662a4f62a44abaae8}} 
+\index{jstream.h@{jstream.h}!jstream\_dump@{jstream\_dump}}
+\index{jstream\_dump@{jstream\_dump}!jstream.h@{jstream.h}}
+\doxysubsubsection{\texorpdfstring{jstream\_dump()}{jstream\_dump()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{jstream_8h_a519b778285205c898b57839ab698552c}{jstream\+\_\+t}} jstream\+\_\+dump (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{f,  }\item[{\mbox{\hyperlink{jstream_8h_a519b778285205c898b57839ab698552c}{jstream\+\_\+t}}}]{obj }\end{DoxyParamCaption})}
+
+Dump an jstream\+\_\+t object to a text file. Return the address of the first item following the object in the array obj. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{jstream_8h_a789cb9083c811ec662a4f62a44abaae8_icgraph}
+\end{center}
+\end{figure}
