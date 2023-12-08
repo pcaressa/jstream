@@ -10,7 +10,7 @@ jstream is yet another Json parser. Actually, the Json parsed by jstream is not 
 
 I wrote it in need of a parsed that consume characters from a stream (a text file, a http channel etc.).
 
-# How?
+## How?
 
 To use it in your code just include the `jstream.h` file, that exports two data types and two functions:
 
