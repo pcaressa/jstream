@@ -31,13 +31,15 @@ typedef unsigned *jstream_t;
 
 /** Structure used to represent in bytes parsed values from
     a stream. */
-typedef struct jstream_param_s {
+typedef struct jstream_param_s 
+// public
+    int error;          ///< error code (0 means no error)
     jstream_t obj;      ///< object under construction
     unsigned size;      ///< number of words (=unsigned) allocated
     int (*get)(void);   ///< function that scan the next character
-    jmp_buf env;        ///< environment used by exceptions
     int clast;          ///< last scanned character
-    int error;          ///< error code (0 means no error)
+// private
+    jmp_buf env;        ///< environment used by exceptions
 } *jstream_param_t;
 
 /** Parse a json stream: it the get field of the structure *p

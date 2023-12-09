@@ -16,12 +16,47 @@ To use it in your code just include the `jstream.h` file, that exports two data 
 
     - type `jstream_t`, an alias for `unsigned*`
     - type `struct jstream_param_s`, the data type used to pass and receive parameters to and from the function `jstream`
-    - function`jstream` that scans a json value from the stream and returns it into a memory block whose address is also returned as value.
+    - function `jstream` that scans a json value from the stream and returns it into a memory block whose address is also returned as value.
     - function `jstream_dump` that prints the content of a memory block produced by `jstream` to a text file in Json format.
 
-You need to define a function `int get(void)` that each time it is called consumes a character in the stream and returns it (or a negative value to denote an error or the end of the stream).
+You need to define a function `int get(void)`, that each time it is called consumes a character in the stream and returns it (or a negative value to denote an error or the end of the stream), and assign its address to the `p->ghet` tag of a `struct jstream_param_s` variable `p`.
 
-Look at the file `jsondump.c` that uses `fgetc` as `get` and prints the result on the terminal (thus implements an echo for Json texts that drops space characters) to see how to use it in practice.
+After `jstream` has been called, you'll find its return values inside the `p` structure: the general scheme is
+
+    struct jstream_param_s p;
+    p.get = your_get_function;
+    jstream(&p);
+    if (p.error) {
+        printf("Error #%i\n", p.error);
+    } else {
+        printf("Address of memory block: %p\n", p.obj);
+        printf("Number of items in the memory block: %u\n", p.size);
+        printf("Last character scanned from the stream: %i\n", p.clast);
+    }
+
+
+The sequence of characters returned by the `get` function is taken by `jstream` to represent a Json value; `jstream` converts it into a bynary format in an array of unsigneds, whose 0-th item denotes the
+type of value, according to the following encoding:
+
+- 0 = `null`
+- 1 = `true`
+- 2 = `false`
+- 3 = number
+- 4 = string
+- 5 = array
+- 6 = object
+
+After that it follows:
+
+- If code == 0 or == 1 or == 2, nothing.
+- if code == 3, a double.
+- if code == 4, a C-string (`'\0'`-terminated).
+- If code == 5, an unsigned n (the number of elements) followed by n values.
+- If code == 6, an unsigned n (the number of elements) followed by n pairs of values.
+
+When parsing a stream, the string representing the value contained in the Json grows to host new data. If an allocation error occurs, all is freed and an error code is returned.
+
+For example, Look at the file `jsondump.c` that uses `fgetc` as `get` and prints the result on the terminal (thus implements an echo for Json texts that drops space characters) to see how to use it in practice.
 
 Enjoy,
 Paolo
