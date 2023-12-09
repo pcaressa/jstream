@@ -14,10 +14,10 @@ I wrote it in need of a parsed that consume characters from a stream (a text fil
 
 To use it in your code just include the `jstream.h` file, that exports two data types and two functions:
 
-    - type `jstream_t`, an alias for `unsigned*`
-    - type `struct jstream_param_s`, the data type used to pass and receive parameters to and from the function `jstream`
-    - function `jstream` that scans a json value from the stream and returns it into a memory block whose address is also returned as value.
-    - function `jstream_dump` that prints the content of a memory block produced by `jstream` to a text file in Json format.
+- type `jstream_t`, an alias for `unsigned*`
+- type `struct jstream_param_s`, the data type used to pass and receive parameters to and from the function `jstream`
+- function `jstream` that scans a json value from the stream and returns it into a memory block whose address is also returned as value.
+- function `jstream_dump` that prints the content of a memory block produced by `jstream` to a text file in Json format.
 
 You need to define a function `int get(void)`, that each time it is called consumes a character in the stream and returns it (or a negative value to denote an error or the end of the stream), and assign its address to the `p->ghet` tag of a `struct jstream_param_s` variable `p`.
 
