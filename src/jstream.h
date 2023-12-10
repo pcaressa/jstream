@@ -31,7 +31,7 @@ typedef unsigned *jstream_t;
 
 /** Structure used to represent in bytes parsed values from
     a stream. */
-typedef struct jstream_param_s 
+typedef struct jstream_param_s {
 // public
     int error;          ///< error code (0 means no error)
     jstream_t obj;      ///< object under construction
