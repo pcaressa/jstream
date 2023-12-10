@@ -6,6 +6,27 @@
 <UL>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="Json values in the data object"><param name="Local" value="index.html#json_data"><param name="ImageNumber" value="11"></OBJECT>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="Grammar accepted"><param name="Local" value="index.html#json_grammar"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Data Structures"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Data Structures"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="jstream_param_s"><param name="Local" value="structjstream__param__s.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="clast"><param name="Local" value="structjstream__param__s.html#a401ff6c40bf91045238a32efa6c74aca"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="env"><param name="Local" value="structjstream__param__s.html#ad0e8c70a31bf61e93177f3a33e1cadf3"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="error"><param name="Local" value="structjstream__param__s.html#a9c906c5eba75e7fdf2fce33ad2cf62e3"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="get"><param name="Local" value="structjstream__param__s.html#a576d6b82422600d4f7263d52d7bc0596"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="obj"><param name="Local" value="structjstream__param__s.html#a8e217b788f5c22a1fddad454b290d121"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="size"><param name="Local" value="structjstream__param__s.html#a0b5757f40f2a26a9fbccae464cb887e8"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Data Structure Index"><param name="Local" value="classes.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Data Fields"><param name="Local" value="functions.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="All"><param name="Local" value="functions.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Variables"><param name="Local" value="functions_vars.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  </UL>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="Files"><param name="Local" value="files.html"><param name="ImageNumber" value="1"></OBJECT>
   <UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="File List"><param name="Local" value="files.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -41,16 +62,19 @@
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="jstream.h"><param name="Local" value="jstream_8h.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="error"><param name="Local" value="jstream_8h.html#a1966b1261bf19dc5fa6a81e8015c356d"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="jstream_param_s"><param name="Local" value="structjstream__param__s.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="clast"><param name="Local" value="structjstream__param__s.html#a401ff6c40bf91045238a32efa6c74aca"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="env"><param name="Local" value="structjstream__param__s.html#ad0e8c70a31bf61e93177f3a33e1cadf3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="error"><param name="Local" value="structjstream__param__s.html#a9c906c5eba75e7fdf2fce33ad2cf62e3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="get"><param name="Local" value="structjstream__param__s.html#a576d6b82422600d4f7263d52d7bc0596"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="obj"><param name="Local" value="structjstream__param__s.html#a8e217b788f5c22a1fddad454b290d121"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="size"><param name="Local" value="structjstream__param__s.html#a0b5757f40f2a26a9fbccae464cb887e8"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="jstream_param_t"><param name="Local" value="jstream_8h.html#a77f67557fbd0ded3d1348ccda5fe907d"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="jstream_t"><param name="Local" value="jstream_8h.html#a519b778285205c898b57839ab698552c"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="jstream"><param name="Local" value="jstream_8h.html#a2a41d11de1a5772bf8d9f67cb37f84ec"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="jstream_dump"><param name="Local" value="jstream_8h.html#a789cb9083c811ec662a4f62a44abaae8"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="clast"><param name="Local" value="jstream_8h.html#ab543d6ebb61551f464cc92d7387535d1"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="env"><param name="Local" value="jstream_8h.html#af874a28e8c6b92a261021f526f4f8378"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="get"><param name="Local" value="jstream_8h.html#aeeacba90c469383a4bf879f3879a2ad2"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="jstream_param_t"><param name="Local" value="jstream_8h.html#a076b8f0d0ff404f7d0f03adf5e92b214"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="obj"><param name="Local" value="jstream_8h.html#a9f0be45046aa73f31b2acb1e49115616"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="size"><param name="Local" value="jstream_8h.html#a245260f6f74972558f61b85227df5aae"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     </UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Globals"><param name="Local" value="globals.html"><param name="ImageNumber" value="11"></OBJECT>

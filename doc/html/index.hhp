@@ -13,7 +13,11 @@ Title=jstream
 main="jstream","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
 
 [FILES]
+annotated.html
+classes.html
 files.html
+functions.html
+functions_vars.html
 globals.html
 globals_defs.html
 globals_eval.html
@@ -26,6 +30,7 @@ jsondump_8c.html
 jstream_8c.html
 jstream_8h.html
 jstream_8h_source.html
+structjstream__param__s.html
 bc_s.png
 bdwn.png
 closed.png

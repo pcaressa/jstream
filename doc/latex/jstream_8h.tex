@@ -18,13 +18,18 @@ This graph shows which files directly or indirectly include this file\+:
 \includegraphics[width=238pt]{jstream_8h__dep__incl}
 \end{center}
 \end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structjstream__param__s}{jstream\+\_\+param\+\_\+s}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
 typedef unsigned $\ast$ \mbox{\hyperlink{jstream_8h_a519b778285205c898b57839ab698552c}{jstream\+\_\+t}}
 \item 
-typedef struct jstream\+\_\+param\+\_\+s int \mbox{\hyperlink{jstream_8h_a1966b1261bf19dc5fa6a81e8015c356d}{error}}
-\begin{DoxyCompactList}\small\item\em error code (0 means no error) \end{DoxyCompactList}\end{DoxyCompactItemize}
+typedef struct \mbox{\hyperlink{structjstream__param__s}{jstream\+\_\+param\+\_\+s}} $\ast$ \mbox{\hyperlink{jstream_8h_a77f67557fbd0ded3d1348ccda5fe907d}{jstream\+\_\+param\+\_\+t}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
@@ -48,37 +53,18 @@ enum \{ \newline
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{jstream_8h_a519b778285205c898b57839ab698552c}{jstream\+\_\+t}} \mbox{\hyperlink{jstream_8h_a2a41d11de1a5772bf8d9f67cb37f84ec}{jstream}} (\mbox{\hyperlink{jstream_8h_a076b8f0d0ff404f7d0f03adf5e92b214}{jstream\+\_\+param\+\_\+t}} p)
+\mbox{\hyperlink{jstream_8h_a519b778285205c898b57839ab698552c}{jstream\+\_\+t}} \mbox{\hyperlink{jstream_8h_a2a41d11de1a5772bf8d9f67cb37f84ec}{jstream}} (\mbox{\hyperlink{jstream_8h_a77f67557fbd0ded3d1348ccda5fe907d}{jstream\+\_\+param\+\_\+t}} p)
 \item 
-\mbox{\hyperlink{jstream_8h_a519b778285205c898b57839ab698552c}{jstream\+\_\+t}} \mbox{\hyperlink{jstream_8h_a789cb9083c811ec662a4f62a44abaae8}{jstream\+\_\+dump}} (FILE $\ast$\mbox{\hyperlink{jsondump_8c_a3efb0e1a16208deecbd84c15401f7cf8}{f}}, \mbox{\hyperlink{jstream_8h_a519b778285205c898b57839ab698552c}{jstream\+\_\+t}} \mbox{\hyperlink{jstream_8h_a9f0be45046aa73f31b2acb1e49115616}{obj}})
-\end{DoxyCompactItemize}
-\doxysubsection*{Variables}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\hyperlink{jstream_8h_a519b778285205c898b57839ab698552c}{jstream\+\_\+t}} \mbox{\hyperlink{jstream_8h_a9f0be45046aa73f31b2acb1e49115616}{obj}}
-\begin{DoxyCompactList}\small\item\em object under construction \end{DoxyCompactList}\item 
-unsigned \mbox{\hyperlink{jstream_8h_a245260f6f74972558f61b85227df5aae}{size}}
-\begin{DoxyCompactList}\small\item\em number of words (=unsigned) allocated \end{DoxyCompactList}\item 
-int($\ast$ \mbox{\hyperlink{jstream_8h_aeeacba90c469383a4bf879f3879a2ad2}{get}} )(void)
-\begin{DoxyCompactList}\small\item\em function that scan the next character \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{jstream_8h_ab543d6ebb61551f464cc92d7387535d1}{clast}}
-\begin{DoxyCompactList}\small\item\em last scanned character \end{DoxyCompactList}\item 
-jmp\+\_\+buf \mbox{\hyperlink{jstream_8h_af874a28e8c6b92a261021f526f4f8378}{env}}
-\begin{DoxyCompactList}\small\item\em environment used by exceptions \end{DoxyCompactList}\item 
-$\ast$ \mbox{\hyperlink{jstream_8h_a076b8f0d0ff404f7d0f03adf5e92b214}{jstream\+\_\+param\+\_\+t}}
+\mbox{\hyperlink{jstream_8h_a519b778285205c898b57839ab698552c}{jstream\+\_\+t}} \mbox{\hyperlink{jstream_8h_a789cb9083c811ec662a4f62a44abaae8}{jstream\+\_\+dump}} (FILE $\ast$\mbox{\hyperlink{jsondump_8c_a3efb0e1a16208deecbd84c15401f7cf8}{f}}, \mbox{\hyperlink{jstream_8h_a519b778285205c898b57839ab698552c}{jstream\+\_\+t}} obj)
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Typedef Documentation}
-\mbox{\Hypertarget{jstream_8h_a1966b1261bf19dc5fa6a81e8015c356d}\label{jstream_8h_a1966b1261bf19dc5fa6a81e8015c356d}} 
-\index{jstream.h@{jstream.h}!error@{error}}
-\index{error@{error}!jstream.h@{jstream.h}}
-\doxysubsubsection{\texorpdfstring{error}{error}}
-{\footnotesize\ttfamily typedef struct jstream\+\_\+param\+\_\+s int \mbox{\hyperlink{jstream_8h_a1966b1261bf19dc5fa6a81e8015c356d}{error}}}
-
-
-
-error code (0 means no error) 
+\mbox{\Hypertarget{jstream_8h_a77f67557fbd0ded3d1348ccda5fe907d}\label{jstream_8h_a77f67557fbd0ded3d1348ccda5fe907d}} 
+\index{jstream.h@{jstream.h}!jstream\_param\_t@{jstream\_param\_t}}
+\index{jstream\_param\_t@{jstream\_param\_t}!jstream.h@{jstream.h}}
+\doxysubsubsection{\texorpdfstring{jstream\_param\_t}{jstream\_param\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structjstream__param__s}{jstream\+\_\+param\+\_\+s}} $\ast$ \mbox{\hyperlink{jstream_8h_a77f67557fbd0ded3d1348ccda5fe907d}{jstream\+\_\+param\+\_\+t}}}
 
 Structure used to represent in bytes parsed values from a stream. \mbox{\Hypertarget{jstream_8h_a519b778285205c898b57839ab698552c}\label{jstream_8h_a519b778285205c898b57839ab698552c}} 
 \index{jstream.h@{jstream.h}!jstream\_t@{jstream\_t}}
@@ -150,7 +136,7 @@ ERR\+\_\+\+CLOSED\+\_\+\+BRACKET&\\
 \index{jstream.h@{jstream.h}!jstream@{jstream}}
 \index{jstream@{jstream}!jstream.h@{jstream.h}}
 \doxysubsubsection{\texorpdfstring{jstream()}{jstream()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{jstream_8h_a519b778285205c898b57839ab698552c}{jstream\+\_\+t}} jstream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jstream_8h_a076b8f0d0ff404f7d0f03adf5e92b214}{jstream\+\_\+param\+\_\+t}}}]{p }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{jstream_8h_a519b778285205c898b57839ab698552c}{jstream\+\_\+t}} jstream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jstream_8h_a77f67557fbd0ded3d1348ccda5fe907d}{jstream\+\_\+param\+\_\+t}}}]{p }\end{DoxyParamCaption})}
 
 Parse a json stream\+: it the get field of the structure $\ast$p to be assigne to a function (pointer) returning the next character read from the stream, or a negative value in case of end or error. Return the following values inside the structure $\ast$p\+: obj = pointer to the memory area containing data size = length of such area in bytes error = error code (0 meaning \char`\"{}no error\char`\"{}) clast = last item got from the stream and that follows the parsed json value. The address obj is also returned as value from the function (in case of error it is NULL). Warning\+: it is the caller responsibility to deallocate p-\/$>$obj once it is no longer needed, via free(p-\/$>$obj). Here is the call graph for this function\+:
 \nopagebreak
@@ -190,62 +176,3 @@ Here is the caller graph for this function\+:
 \includegraphics[width=246pt]{jstream_8h_a789cb9083c811ec662a4f62a44abaae8_icgraph}
 \end{center}
 \end{figure}
-
-
-\doxysubsection{Variable Documentation}
-\mbox{\Hypertarget{jstream_8h_ab543d6ebb61551f464cc92d7387535d1}\label{jstream_8h_ab543d6ebb61551f464cc92d7387535d1}} 
-\index{jstream.h@{jstream.h}!clast@{clast}}
-\index{clast@{clast}!jstream.h@{jstream.h}}
-\doxysubsubsection{\texorpdfstring{clast}{clast}}
-{\footnotesize\ttfamily int clast}
-
-
-
-last scanned character 
-
-\mbox{\Hypertarget{jstream_8h_af874a28e8c6b92a261021f526f4f8378}\label{jstream_8h_af874a28e8c6b92a261021f526f4f8378}} 
-\index{jstream.h@{jstream.h}!env@{env}}
-\index{env@{env}!jstream.h@{jstream.h}}
-\doxysubsubsection{\texorpdfstring{env}{env}}
-{\footnotesize\ttfamily jmp\+\_\+buf env}
-
-
-
-environment used by exceptions 
-
-\mbox{\Hypertarget{jstream_8h_aeeacba90c469383a4bf879f3879a2ad2}\label{jstream_8h_aeeacba90c469383a4bf879f3879a2ad2}} 
-\index{jstream.h@{jstream.h}!get@{get}}
-\index{get@{get}!jstream.h@{jstream.h}}
-\doxysubsubsection{\texorpdfstring{get}{get}}
-{\footnotesize\ttfamily int($\ast$ get) (void) (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
-
-
-
-function that scan the next character 
-
-\mbox{\Hypertarget{jstream_8h_a076b8f0d0ff404f7d0f03adf5e92b214}\label{jstream_8h_a076b8f0d0ff404f7d0f03adf5e92b214}} 
-\index{jstream.h@{jstream.h}!jstream\_param\_t@{jstream\_param\_t}}
-\index{jstream\_param\_t@{jstream\_param\_t}!jstream.h@{jstream.h}}
-\doxysubsubsection{\texorpdfstring{jstream\_param\_t}{jstream\_param\_t}}
-{\footnotesize\ttfamily $\ast$ jstream\+\_\+param\+\_\+t}
-
-\mbox{\Hypertarget{jstream_8h_a9f0be45046aa73f31b2acb1e49115616}\label{jstream_8h_a9f0be45046aa73f31b2acb1e49115616}} 
-\index{jstream.h@{jstream.h}!obj@{obj}}
-\index{obj@{obj}!jstream.h@{jstream.h}}
-\doxysubsubsection{\texorpdfstring{obj}{obj}}
-{\footnotesize\ttfamily \mbox{\hyperlink{jstream_8h_a519b778285205c898b57839ab698552c}{jstream\+\_\+t}} obj}
-
-
-
-object under construction 
-
-\mbox{\Hypertarget{jstream_8h_a245260f6f74972558f61b85227df5aae}\label{jstream_8h_a245260f6f74972558f61b85227df5aae}} 
-\index{jstream.h@{jstream.h}!size@{size}}
-\index{size@{size}!jstream.h@{jstream.h}}
-\doxysubsubsection{\texorpdfstring{size}{size}}
-{\footnotesize\ttfamily unsigned size}
-
-
-
-number of words (=unsigned) allocated 
-
