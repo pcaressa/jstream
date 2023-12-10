@@ -1,0 +1,67 @@
+\hypertarget{jsondump_8c}{}\doxysection{jsondump.\+c File Reference}
+\label{jsondump_8c}\index{jsondump.c@{jsondump.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}jstream.\+h\char`\"{}}\newline
+Include dependency graph for jsondump.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{jsondump_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{jsondump_8c_aded165600520c641e6524d082bef1e30}{get}} (void)
+\item 
+int \mbox{\hyperlink{jsondump_8c_a9a2a04027b3d4f8fb9aeadb1b5ea720b}{main}} (int n, char $\ast$$\ast$a)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static FILE $\ast$ \mbox{\hyperlink{jsondump_8c_a3efb0e1a16208deecbd84c15401f7cf8}{f}} = NULL
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{jsondump_8c_aded165600520c641e6524d082bef1e30}\label{jsondump_8c_aded165600520c641e6524d082bef1e30}} 
+\index{jsondump.c@{jsondump.c}!get@{get}}
+\index{get@{get}!jsondump.c@{jsondump.c}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily int get (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{jsondump_8c_aded165600520c641e6524d082bef1e30_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{jsondump_8c_a9a2a04027b3d4f8fb9aeadb1b5ea720b}\label{jsondump_8c_a9a2a04027b3d4f8fb9aeadb1b5ea720b}} 
+\index{jsondump.c@{jsondump.c}!main@{main}}
+\index{main@{main}!jsondump.c@{jsondump.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{char $\ast$$\ast$}]{a }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jsondump_8c_a9a2a04027b3d4f8fb9aeadb1b5ea720b_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{jsondump_8c_a3efb0e1a16208deecbd84c15401f7cf8}\label{jsondump_8c_a3efb0e1a16208deecbd84c15401f7cf8}} 
+\index{jsondump.c@{jsondump.c}!f@{f}}
+\index{f@{f}!jsondump.c@{jsondump.c}}
+\doxysubsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily FILE$\ast$ f = NULL\hspace{0.3cm}{\ttfamily [static]}}
+
+This program shows how to use jstream\+: after compiling it by {\ttfamily clang \mbox{\hyperlink{jsondump_8c}{jsondump.\+c}} \mbox{\hyperlink{jstream_8c}{jstream.\+c}} -\/o jsondump}, use it as \begin{DoxyVerb}jsondump file1 ... filen
+\end{DoxyVerb}
+ to read, store as objects and dump on the terminal again in Json format the contents of file1 ... filen. 
