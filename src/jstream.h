@@ -6,6 +6,46 @@
 #include <setjmp.h>
 #include <stdio.h>
 
+/** \mainpage
+
+    \section json_data Json values in the data object
+
+    An input text is taken to represent a Json value by the
+    jstream function, that converts it into a bynary format
+    in an array of unsigneds, whose 0-th item denotes the
+    type of value, according to the following encoding:
+        - 0 = null
+        - 1 = true
+        - 2 = false
+        - 3 = number
+        - 4 = string
+        - 5 = array
+        - 6 = object
+
+    After that it follows:
+        - If code == 0 or == 1 or == 2, nothing.
+        - if code == 3, a double.
+        - if code == 4, a C-string.
+        - If code == 5, an unsigned n (the number of elements)
+            followed by n values.
+        - If code == 6, an unsigned n (the number of elements)
+            followed by n pairs of values.
+    
+    When parsing a stream, the string representing the value
+    contained in the Json grows to host new data. If an
+    allocation error occurs, all is freed and an error code
+    is returned. */
+
+/** Value codes (null is already represented by NULL). */
+enum {
+    TRUE = 1,
+    FALSE = 2,
+    NUMBER = 3,
+    STRING = 4,
+    ARRAY = 5,
+    OBJECT = 6
+};
+
 /** Error codes: they are returned in the referenced
     parameter err by the jstream function. */
 enum {
@@ -53,14 +93,20 @@ typedef struct jstream_param_s {
         clast = last item got from the stream and that
                 follows the parsed json value.
     The address obj is also returned as value from the
-    function (in case of error it is NULL).
-    Warning: it is the caller responsibility to deallocate p->obj
-    once it is no longer needed, via free(p->obj). */
+    function (in case of error it is NULL and no object is
+    allocated).
+    Warning: it is the caller responsibility to deallocate
+    p->obj once it is no longer needed, via free(p->obj). */
 extern jstream_t jstream(jstream_param_t p);
 
 /** Dump an jstream_t object to a text file. Return the
     address of the first item following the object in the
     array obj. */
 extern jstream_t jstream_dump(FILE *f, jstream_t obj);
+
+/** Given the address of a Json value s dumped by jstream, return
+    the address of the value immediately following it. If the code
+    at obj[0] is not valid, return NULL. */
+extern jstream_t jstream_skip(jstream_t obj);
 
 #endif

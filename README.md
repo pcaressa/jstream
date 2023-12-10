@@ -35,28 +35,27 @@ After `jstream` has been called, you'll find its return values inside the `p` st
     }
 
 
-The sequence of characters returned by the `get` function is taken by `jstream` to represent a Json value; `jstream` converts it into a bynary format in an array of unsigneds, whose 0-th item denotes the
-type of value, according to the following encoding:
+The sequence of characters returned by the `get` function is taken by `jstream` to represent a Json value; `jstream` converts it into a bynary format in an array of unsigneds, whose 0-th item denotes the type of value, which is enumerated in the jstream.h file:
 
-- 0 = `null`
-- 1 = `true`
-- 2 = `false`
-- 3 = number
-- 4 = string
-- 5 = array
-- 6 = object
+- NULL (0) for `null`
+- TRUE (1) for `true`
+- FALSE (2) for `false`
+- NUMBER (3) for number
+- STRING (4) for string
+- ARRAY (5) for array
+- OBJECT (6) for object
 
 After that it follows:
 
-- If code == 0 or == 1 or == 2, nothing.
-- if code == 3, a double.
-- if code == 4, a C-string (`'\0'`-terminated).
-- If code == 5, an unsigned n (the number of elements) followed by n values.
-- If code == 6, an unsigned n (the number of elements) followed by n pairs of values.
+- If NULL, TRUE or FALSE, nothing.
+- if NUMBER, a double.
+- if STRING, a C-string (`'\0'`-terminated).
+- If ARRAY, an unsigned n (the number of elements) followed by n values.
+- If OBJECT, an unsigned n (the number of elements) followed by n pairs of values.
 
-When parsing a stream, the string representing the value contained in the Json grows to host new data. If an allocation error occurs, all is freed and an error code is returned.
+The `jstream_skip` function skips to the current value (if it is an array or an object skip all of it).
 
-For example, Look at the file `jsondump.c` that uses `fgetc` as `get` and prints the result on the terminal (thus implements an echo for Json texts that drops space characters) to see how to use it in practice.
+For an example, look at the file `jsondump.c` that uses `fgetc` as `get` and prints the result on the terminal (thus implements an echo for Json texts that drops space characters) to see how to use it in practice.
 
 Enjoy,
 Paolo

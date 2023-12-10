@@ -6,18 +6,16 @@
         jsondump file1 ... filen
     
     to read, store as objects and dump on the terminal again
-    in Json format the contents of file1 ... filen. */
+    in compressed Json format the contents of file1 ... filen. */
 
 #include <stdio.h>
 #include "jstream.h"
 
 static FILE *f = NULL;
 
-int get(void)
+static int get(void)
 {
-    int c = fgetc(f);
-    fputc(c, stderr);
-    return c;
+    return fgetc(f);
 }
 
 int main(int n, char **a)
@@ -39,10 +37,10 @@ int main(int n, char **a)
             if (0) {
                 puts("Binary dump:");
                 for (int i = 0; i < param.size; ++ i)
-                    printf("%16p: %08x\n", obj + i, param.obj[i]);
+                    printf("%16p: %08x\n", obj + i, obj[i]);
                 putchar('\n');
             }
-            jstream_dump(stdout, param.obj);
+            jstream_dump(stdout, obj);
             putchar('\n');
         }
     }

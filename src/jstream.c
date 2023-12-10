@@ -154,13 +154,6 @@
 
 /* *** PRIVATE STUFF *** */
 
-#define ARRAY 5
-#define FALSE 2
-#define NUMBER 3
-#define OBJECT 6
-#define STRING 4
-#define TRUE 1
-
 /** If size is multiple of sizeof(unsigned) then return size
     divided by sizeof(unsigned), else return size + 1 divided
     by sizeof(unsigned). */
@@ -370,7 +363,7 @@ jstream_t jstream(jstream_param_t p)
 jstream_t jstream_dump(FILE *f, jstream_t obj)
 {
     switch (obj[0]) {
-    case 0:
+    case 0 /* NULL */:
         fputs("null", f);
         return obj + 1;
     case FALSE:
@@ -412,6 +405,33 @@ jstream_t jstream_dump(FILE *f, jstream_t obj)
     }
     default:
         fprintf(f, "Invalid object code: %u at %p\n", obj[0], obj);
+    }
+    return NULL;
+}
+
+jstream_t jstream_skip(jstream_t obj)
+{
+    switch (obj[0]) {
+        case 0 /* NULL */: case FALSE: case TRUE:
+            return obj + 1;
+        case NUMBER:
+            return obj + 1 + sizeof(double)/sizeof(unsigned);
+        case STRING:
+            return obj + 1 + jstream_align(strlen((char*)(obj + 1)) + 1);
+        case ARRAY: {
+            jstream_t next = obj + 2;
+            for (unsigned i = 0; i < obj[1]; ++ i) {
+                next = jstream_skip(next);
+            }
+            return next;
+        }
+        case OBJECT: {
+            jstream_t next = obj + 2;
+            for (unsigned i = 0; i < obj[1]; ++ i) {
+                next = jstream_skip(jstream_skip(next));
+            }
+            return next;
+        }
     }
     return NULL;
 }
